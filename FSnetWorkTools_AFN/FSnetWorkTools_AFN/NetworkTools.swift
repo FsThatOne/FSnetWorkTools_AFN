@@ -11,7 +11,7 @@ import UIKit
 import AFNetworking
 
 /// HTTP 请求方法枚举
-enum HMRequestMethod: String {
+enum FSRequestMethod: String {
     case GET = "GET"
     case POST = "POST"
 }
@@ -41,7 +41,7 @@ extension NetworkTools {
     /// - parameter URLString:  URLString
     /// - parameter parameters: 参数字典
     /// - parameter finished:   完成回调
-    func request(method: HMRequestMethod, URLString: String, parameters: [String: AnyObject]?, finished: (result: AnyObject?, error: NSError?)->()) {
+    func request(method: FSRequestMethod, URLString: String, parameters: [String: AnyObject]?, finished: (result: AnyObject?, error: NSError?)->()) {
         
         // 定义成功回调
         let success = { (task: NSURLSessionDataTask, result: AnyObject) -> Void in
@@ -49,43 +49,16 @@ extension NetworkTools {
         }
         
         // 定义失败回调
-        let failure = { (task: NSURLSessionDataTask, error: NSError) -> Void in
+        let failure = { (task: NSURLSessionDataTask?, error: NSError) -> Void in
             // 在开发网络应用的时候，错误不要提示给用户，但是错误一定要输出！
             print(error)
             finished(result: nil, error: error)
         }
         
-        if method == HMRequestMethod.GET {
+        if method == FSRequestMethod.GET {
             GET(URLString, parameters: parameters, success: success, failure: failure)
         } else {
             POST(URLString, parameters: parameters, success: success, failure: failure)
         }
-        //
-        //        if method == HMRequestMethod.GET {
-        //
-        //            GET(URLString, parameters: parameters, success: { (_, result) -> Void in
-        //
-        //                finished(result: result, error: nil)
-        //
-        //                }) { (_, error) -> Void in
-        //
-        //                    // 在开发网络应用的时候，错误不要提示给用户，但是错误一定要输出！
-        //                    print(error)
-        //                    finished(result: nil, error: error)
-        //            }
-        //        } else {
-        //
-        //            POST(URLString, parameters: parameters, success: { (_, result) -> Void in
-        //
-        //                finished(result: result, error: nil)
-        //
-        //                }) { (_, error) -> Void in
-        //
-        //                    // 在开发网络应用的时候，错误不要提示给用户，但是错误一定要输出！
-        //                    print(error)
-        //                    finished(result: nil, error: error)
-        //            }
-        //        }
-        
     }
 }
