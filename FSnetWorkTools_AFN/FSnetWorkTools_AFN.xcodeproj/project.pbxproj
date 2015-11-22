@@ -14,6 +14,8 @@
 		B6CFB0311C01CCEF008EF0EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6CFB02F1C01CCEF008EF0EE /* LaunchScreen.storyboard */; };
 		B6CFB03C1C01CCEF008EF0EE /* FSnetWorkTools_AFNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFB03B1C01CCEF008EF0EE /* FSnetWorkTools_AFNTests.swift */; };
 		B6CFB0471C01CCEF008EF0EE /* FSnetWorkTools_AFNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFB0461C01CCEF008EF0EE /* FSnetWorkTools_AFNUITests.swift */; };
+		B6CFB0551C01CFB8008EF0EE /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CFB0541C01CFB8008EF0EE /* NetworkTools.swift */; };
+		E26FC45FF177235C8390DCED /* Pods_FSnetWorkTools_AFN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6898ECEA0BE824973EB61318 /* Pods_FSnetWorkTools_AFN.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6898ECEA0BE824973EB61318 /* Pods_FSnetWorkTools_AFN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSnetWorkTools_AFN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B498A3BA0237B1E65BE67D /* Pods-FSnetWorkTools_AFN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSnetWorkTools_AFN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FSnetWorkTools_AFN/Pods-FSnetWorkTools_AFN.debug.xcconfig"; sourceTree = "<group>"; };
+		A08FAC492F0B547BDA9FF7B7 /* Pods-FSnetWorkTools_AFN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSnetWorkTools_AFN.release.xcconfig"; path = "Pods/Target Support Files/Pods-FSnetWorkTools_AFN/Pods-FSnetWorkTools_AFN.release.xcconfig"; sourceTree = "<group>"; };
 		B6CFB0231C01CCEF008EF0EE /* FSnetWorkTools_AFN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSnetWorkTools_AFN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CFB0261C01CCEF008EF0EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6CFB0281C01CCEF008EF0EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		B6CFB0421C01CCEF008EF0EE /* FSnetWorkTools_AFNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSnetWorkTools_AFNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CFB0461C01CCEF008EF0EE /* FSnetWorkTools_AFNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSnetWorkTools_AFNUITests.swift; sourceTree = "<group>"; };
 		B6CFB0481C01CCEF008EF0EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6CFB0541C01CFB8008EF0EE /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26FC45FF177235C8390DCED /* Pods_FSnetWorkTools_AFN.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		485F5839B419CB12ADA100DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6898ECEA0BE824973EB61318 /* Pods_FSnetWorkTools_AFN.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6CFB01A1C01CCEF008EF0EE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,8 @@
 				B6CFB03A1C01CCEF008EF0EE /* FSnetWorkTools_AFNTests */,
 				B6CFB0451C01CCEF008EF0EE /* FSnetWorkTools_AFNUITests */,
 				B6CFB0241C01CCEF008EF0EE /* Products */,
+				EEB19269894435CCCCEA411E /* Pods */,
+				485F5839B419CB12ADA100DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +116,7 @@
 			children = (
 				B6CFB0261C01CCEF008EF0EE /* AppDelegate.swift */,
 				B6CFB0281C01CCEF008EF0EE /* ViewController.swift */,
+				B6CFB0541C01CFB8008EF0EE /* NetworkTools.swift */,
 				B6CFB02A1C01CCEF008EF0EE /* Main.storyboard */,
 				B6CFB02D1C01CCEF008EF0EE /* Assets.xcassets */,
 				B6CFB02F1C01CCEF008EF0EE /* LaunchScreen.storyboard */,
@@ -125,6 +143,15 @@
 			path = FSnetWorkTools_AFNUITests;
 			sourceTree = "<group>";
 		};
+		EEB19269894435CCCCEA411E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92B498A3BA0237B1E65BE67D /* Pods-FSnetWorkTools_AFN.debug.xcconfig */,
+				A08FAC492F0B547BDA9FF7B7 /* Pods-FSnetWorkTools_AFN.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6CFB04B1C01CCEF008EF0EE /* Build configuration list for PBXNativeTarget "FSnetWorkTools_AFN" */;
 			buildPhases = (
+				BA1EC8C79B236FEA23EFD68A /* Check Pods Manifest.lock */,
 				B6CFB01F1C01CCEF008EF0EE /* Sources */,
 				B6CFB0201C01CCEF008EF0EE /* Frameworks */,
 				B6CFB0211C01CCEF008EF0EE /* Resources */,
+				5A89FBF1DDF181A859F543B9 /* Embed Pods Frameworks */,
+				C4C6771BEC85864EFF5F7757 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +284,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A89FBF1DDF181A859F543B9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSnetWorkTools_AFN/Pods-FSnetWorkTools_AFN-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA1EC8C79B236FEA23EFD68A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4C6771BEC85864EFF5F7757 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSnetWorkTools_AFN/Pods-FSnetWorkTools_AFN-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6CFB01F1C01CCEF008EF0EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +339,7 @@
 			files = (
 				B6CFB0291C01CCEF008EF0EE /* ViewController.swift in Sources */,
 				B6CFB0271C01CCEF008EF0EE /* AppDelegate.swift in Sources */,
+				B6CFB0551C01CFB8008EF0EE /* NetworkTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +477,7 @@
 		};
 		B6CFB04C1C01CCEF008EF0EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B498A3BA0237B1E65BE67D /* Pods-FSnetWorkTools_AFN.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FSnetWorkTools_AFN/Info.plist;
@@ -409,6 +489,7 @@
 		};
 		B6CFB04D1C01CCEF008EF0EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A08FAC492F0B547BDA9FF7B7 /* Pods-FSnetWorkTools_AFN.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FSnetWorkTools_AFN/Info.plist;
@@ -485,6 +566,7 @@
 				B6CFB04D1C01CCEF008EF0EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6CFB04E1C01CCEF008EF0EE /* Build configuration list for PBXNativeTarget "FSnetWorkTools_AFNTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +575,7 @@
 				B6CFB0501C01CCEF008EF0EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6CFB0511C01CCEF008EF0EE /* Build configuration list for PBXNativeTarget "FSnetWorkTools_AFNUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +584,7 @@
 				B6CFB0531C01CCEF008EF0EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
